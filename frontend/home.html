@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persona Lite</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/jquery.js"></script>
+  </head>
+  <body class="font-sans bg-black">
+    <nav>
+      <div
+        class="h-16 bg-zinc-900 xl:px-7 shadow-sm box-border flex justify-between items-center text-xl text-white px-3"
+      >
+        <div id="menu" class="md:hidden cursor-pointer">
+          <i class="lni lni-menu"></i>
+        </div>
+        <div>
+          <div class="flex justify-center items-center text-sm gap-5">
+            <div class="text-3xl">
+              <i class="lni lni-github-original"></i>
+            </div>
+            <div class="hidden md:flex">
+              <input
+                id="search"
+                type="text"
+                class="w-64 focus:w-[400px] duration-150 transition-all bg-black border border-zinc-700 rounded-md p-1"
+                placeholder="Search or jump to..."
+              />
+            </div>
+            <ul class="hidden md:flex justify-center items-center gap-5">
+              <li class="hover:text-blue-500"><a href="#">Home</a></li>
+              <li class="hover:text-blue-500"><a href="#">Works</a></li>
+              <li class="hover:text-blue-500"><a href="#">Post</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-5">
+          <div><i class="lni lni-alarm"></i></div>
+          <div class="text-sm hidden md:flex"><i class="lni lni-plus"></i></div>
+          <div class="relative">
+            <div
+              id="profil-button"
+              class="h-7 w-7 hidden md:flex bg-blue-600 rounded-full cursor-pointer"
+            ></div>
+
+            <div
+              id="menu-bar"
+              class="hidden absolute right-0 mt-1 bg-zinc-800 p-3 rounded-md border border-zinc-700 z-50"
+            >
+              <ul class="text-sm w-36">
+                <li class="border-b py-2 border-zinc-700">
+                  <div>
+                    <p>Sign in as</p>
+                    <p>🥰️ Ilhamdwikiarifani</p>
+                  </div>
+                </li>
+                <li class="mt-1 hover:text-blue-500">
+                  <a href="#">Dasboard</a>
+                </li>
+                <li class="mt-1 hover:text-blue-500"><a href="#">About</a></li>
+                <li class="mt-1 hover:text-blue-500">
+                  <a href="#">Contact</a>
+                </li>
+                <li
+                  class="mt-1 py-2 border-t border-zinc-700 hover:text-blue-500"
+                >
+                  <i class="lni lni-exit"></i> <a href="#">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="navbar" class="hidden h-auto bg-zinc-900">
+        <ul class="text-white p-3 text-sm">
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Home</a>
+          </li>
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Dasboard</a>
+          </li>
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Works</a>
+          </li>
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Post</a>
+          </li>
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Abouts</a>
+          </li>
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Contact</a>
+          </li>
+          <li class="py-2 border-b border-zinc-700 hover:text-blue-500">
+            <a href="#">Settings</a>
+          </li>
+
+          <li
+            class="py-2 border-b border-zinc-700 flex justify-start items-center"
+          >
+            <div class="h-5 w-5 rounded-full bg-blue-600 mr-3"></div>
+            Ilhamdwikiarifani
+          </li>
+          <li class="hover:text-blue-500 pt-2">
+            <i class="lni lni-exit"></i> <a href="#">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- content start -->
+    <section>
+      <div class="grid grid-cols-1 xl:grid-cols-4">
+        <!-- Kiri Start -->
+        <div
+          class="border-r bg-zinc-800 bg-opacity-50 border-zinc-700 h-auto xl:min-h-screen text-white text-sm p-8"
+        >
+          <div class="flex justify-between items-center">
+            <p>Recent Repositories</p>
+            <a href="#" class="px-3 py-1 bg-green-600 rounded-md font-medium"
+              ><i class="lni lni-certificate"></i> New</a
+            >
+          </div>
+          <div class="mt-3">
+            <input
+              type="text"
+              placeholder="Find a repository"
+              class="w-full py-1 px-3 rounded-md bg-black border border-zinc-700 text-sm placeholder:text-sm"
+            />
+          </div>
+          <div class="mt-5 pb-4 border-b border-zinc-700">
+            <ul>
+              <li class="mb-2">
+                <div class="flex justify-start items-center gap-2">
+                  <div><p>🍅</p></div>
+                  <div><p>ilhamdwikiarifani/tailwind--darkmode</p></div>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="flex justify-start items-center gap-2">
+                  <div><p>🐟</p></div>
+                  <div><p>ilhamdwikiarifani/belajar-php</p></div>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="flex justify-start items-center gap-2">
+                  <div><p>🍅</p></div>
+                  <div><p>ilhamdwikiarifani/project--akhir-admin</p></div>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="flex justify-start items-center gap-2">
+                  <div><p>🍅</p></div>
+                  <div><p>ilhamdwikiarifani/project-akhir-landingpage</p></div>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="flex justify-start items-center gap-2">
+                  <div><p>🍅</p></div>
+                  <div><p>ilhamdwikiarifani/laravel-framework--learn</p></div>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="flex justify-start items-center gap-2">
+                  <div><p>🍅</p></div>
+                  <div>
+                    <p>ilhamdwikiarifani/laravel-framework--tugas1</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <p class="font-semibold mb-2">Recent activity</p>
+            <small class="leading-relaxed">
+              When you take actions across GitHub, we’ll provide links to that
+              activity here.
+            </small>
+          </div>
+        </div>
+        <!-- Kiri End -->
+
+        <!-- Tengah Start -->
+        <div class="h-auto xl:min-h-screen col-span-2">
+          <div class="px-7 py-3">
+            <div
+              x-data="{
+      openTab: 1,
+      activeClasses: 'font-bold border-b-2 border-orange-300',
+      inactiveClasses: 'font-medium'
+    }"
+              class="mb-4"
+            >
+              <ul
+                class="flex flex-wrap -mb-px text-sm border-b border-zinc-700 text-white font-medium text-center relative"
+              >
+                <li
+                  @click="openTab = 1"
+                  :class="{ '-mb-px': openTab === 1 }"
+                  class="-mb-px mr-1"
+                >
+                  <a
+                    :class="openTab === 1 ? activeClasses : inactiveClasses"
+                    class="inline-block p-4"
+                    href="#"
+                  >
+                    Following
+                  </a>
+                </li>
+                <li
+                  @click="openTab = 2"
+                  :class="{ '-mb-px': openTab === 2 }"
+                  class="mr-1"
+                >
+                  <a
+                    :class="openTab === 2 ? activeClasses : inactiveClasses"
+                    class="inline-block p-4"
+                    href="#"
+                    >For you
+                    <span
+                      class="border border-green-600 p-1 rounded-full text-green-600 text-[9px] ml-1"
+                      >Beta</span
+                    >
+                  </a>
+                </li>
+                <div
+                  x-show="openTab === 2"
+                  class="flex justify-center items-center gap-4 text-[13px] font-light absolute right-0 mt-5"
+                >
+                  <a href="#" class="text-blue-500">Send Feedback</a>
+                  <p>Filter</p>
+                </div>
+              </ul>
+              <div class="w-full pt-4">
+                <!-- konten tab 1 start -->
+                <div x-show="openTab === 1">
+                  <div
+                    class="p-9 mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-white"
+                  >
+                    <p class="font-semibold text-2xl mb-2">
+                      Discover interesting projects and people to populate your
+                      personal news feed.
+                    </p>
+                    <p class="mb-5 text-sm font-light">
+                      Your news feed helps you keep up with recent activity on
+                      repositories you
+                      <span class="text-blue-500">watch</span> or
+                      <span class="text-blue-500">star</span> and people you
+                      <span class="text-blue-500">follow</span>.
+                    </p>
+                    <button
+                      class="py-1 px-4 bg-zinc-700 hover:bg-zinc-600 hover:bg-opacity-60 bg-opacity-50 border border-zinc-700 rounded-md font-semibold text-sm text-blue-500"
+                    >
+                      Explore Persona
+                    </button>
+                  </div>
+                  <div class="p-4 text-white text-[13px] mt-4">
+                    <p class="mb-2">
+                      <i class="lni lni-invention"></i> &nbsp; ProTip! The feed
+                      shows you events from people you
+                      <span class="text-blue-500">follow</span> and repositories
+                      you <span class="text-blue-500">watch</span> or
+                      <span class="text-blue-500">star</span>.
+                    </p>
+                    <p>
+                      <i class="lni lni-rss-feed"></i> &nbsp; Subscribe to your
+                      news feed
+                    </p>
+                  </div>
+                </div>
+                <!-- konten tab 1 end -->
+                <!-- konten tab 2 start -->
+                <div x-show="openTab === 2">
+                  <div
+                    class="px-9 py-7 mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-center text-white"
+                  >
+                    <p class="font-semibold text-2xl mb-2">Explore GitHub</p>
+                    <p class="mb-5 text-sm font-light">
+                      Star repositories and follow contributors to receive
+                      personalized suggestions.
+                    </p>
+                  </div>
+                </div>
+                <!-- konten tab 2 end -->
+              </div>
+              <!-- footer start -->
+              <div
+                class="hidden xl:flex p-4 text-[#8b8b8b] text-[13px] justify-start items-start gap-28 w-full"
+              >
+                <div class="flex justify-center items-center gap-2">
+                  <div class="text-[26px]">
+                    <i class="lni lni-github-original"></i>
+                  </div>
+                  <p>&copy; 2022 Persona, Inc</p>
+                </div>
+                <div class="flex justify-start items-start gap-8 mt-3">
+                  <div>
+                    <ul>
+                      <li class="mb-1"><a href="#">Blog</a></li>
+                      <li class="mb-1"><a href="#">About</a></li>
+                      <li class="mb-1"><a href="#">Shop</a></li>
+                      <li class="mb-1"><a href="#">Contact</a></li>
+                      <li class="mb-1"><a href="#">GitHub</a></li>
+                      <li class="mb-1"><a href="#">Pricing</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mb-1"><a href="#">API</a></li>
+                      <li class="mb-1"><a href="#">Training</a></li>
+                      <li class="mb-1"><a href="#">Status</a></li>
+                      <li class="mb-1"><a href="#">Security</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mb-1"><a href="#">Terms</a></li>
+                      <li class="mb-1"><a href="#">Privacy</a></li>
+                      <li class="mb-1"><a href="#">Docs</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- footer end -->
+            </div>
+          </div>
+        </div>
+        <!-- Tengah End -->
+
+        <!-- Kanan Start -->
+        <div class="border-b border-zinc-800 h-auto xl:min-h-screen text-white">
+          <div class="p-8">
+            <p>Latest changes</p>
+            <div class="mt-5 border-l border-zinc-500 relative">
+              <div class="pl-7 mb-4">
+                <p class="text-[35px] absolute left-[-6.5px]">•</p>
+                <p class="text-[12px] text-[#8b8b8b]">Yesterday</p>
+                <p class="text-[14px]">
+                  <a href="#">Deferred syntax highlighting</a>
+                </p>
+              </div>
+              <div class="pl-7">
+                <p class="text-[35px] absolute left-[-6.5px]">•</p>
+                <p class="text-[12px] text-[#8b8b8b]">2 days ago</p>
+                <p class="text-[14px]">
+                  <a href="#">The new GitHub Issues – June 23rd update</a>
+                </p>
+              </div>
+              <div class="pl-7">
+                <p class="text-[35px] absolute left-[-6.5px]">•</p>
+                <p class="text-[12px] pt-3 text-[#8b8b8b]">2 days ago</p>
+                <p class="text-[14px]">
+                  <a href="#"
+                    >Dependabot alerts: Filter alerts by the scope of the
+                    dependency (runtime and...</a
+                  >
+                </p>
+              </div>
+              <div class="pl-7">
+                <p class="text-[35px] absolute left-[-6.5px]">•</p>
+                <p class="text-[12px] pt-3 text-[#8b8b8b]">3 days ago</p>
+                <p class="text-[14px]">
+                  <a href="#"
+                    >Secret scanning’s REST API endpoints now support
+                    cursor-based pagination</a
+                  >
+                </p>
+              </div>
+              <div>
+                <p class="text-[11px] text-[#8b8b8b] ml-6 mt-4">
+                  <a href="#">View changelog →</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Kanan End -->
+      </div>
+    </section>
+    <!-- content end -->
+
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>
