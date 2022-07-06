@@ -128,7 +128,7 @@
           <div class="flex justify-center items-center relative">
             <div class="w-[270px] h-[270px] bg-blue-600 rounded-full"></div>
             <div
-              class="absolute right-[14px] bottom-[20px] py-[10px] px-[11px] border bg-black border-zinc-700 rounded-full cursor-pointer"
+              class="absolute right-[28px] md:right-[14px] bottom-[20px] py-[10px] px-[11px] border bg-black border-zinc-700 rounded-full cursor-pointer"
             >
               <div class="hover:pl-[100px] transition-all duration-150">🏠</div>
             </div>
@@ -144,17 +144,21 @@
               <a href="#">Edit Profile</a>
             </div>
             <div>
-              <div>
-                <i class="lni lni-map-marker mr-1"></i
-                ><a href="#">Tulungagung, Jawa Timur, Indonesia</a>
+              <div class="mb-1">
+                <i class="lni lni-map-marker mr-2"></i
+                ><a href="#" class="text-zinc-400"
+                  >Tulungagung, Jawa Timur, Indonesia</a
+                >
               </div>
-              <div>
-                <i class="lni lni-link mr-1"></i
-                ><a href="#">https://ilhamdwikiarifani.github.io/</a>
+              <div class="mb-1">
+                <i class="lni lni-link mr-2"></i
+                ><a href="#" class="text-zinc-400"
+                  >https://ilhamdwikiarifani.github.io/</a
+                >
               </div>
-              <div>
-                <i class="lni lni-twitter-filled mr-1"></i
-                ><a href="#">@akukyrn_</a>
+              <div class="mb-1">
+                <i class="lni lni-twitter-filled mr-2"></i
+                ><a href="#" class="text-zinc-400">@akukyrn_</a>
               </div>
             </div>
           </div>
@@ -214,40 +218,48 @@
               </ul>
               <div class="w-full pt-4">
                 <!-- konten tab 1 start -->
-                <div x-show="openTab === 1">
+                <div
+                  x-show="openTab === 1"
+                  class="grid grid-cols-1 md:grid-cols-2 gap-5"
+                >
+                  <!-- goaodaida -->
                   <div
-                    class="p-9 mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-white"
+                    class="p-9 min-h-[130px] mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-white"
                   >
-                    <p class="font-semibold text-2xl mb-2">
+                    <p class="font-semibold mb-2">
                       Discover interesting projects and people to populate your
                       personal news feed.
                     </p>
-                    <p class="mb-5 text-sm font-light">
-                      Your news feed helps you keep up with recent activity on
-                      repositories you
-                      <span class="text-blue-500">watch</span> or
-                      <span class="text-blue-500">star</span> and people you
-                      <span class="text-blue-500">follow</span>.
-                    </p>
-                    <button
-                      class="py-1 px-4 bg-zinc-700 hover:bg-zinc-600 hover:bg-opacity-60 bg-opacity-50 border border-zinc-700 rounded-md font-semibold text-sm text-blue-500"
-                    >
-                      Explore Persona
-                    </button>
                   </div>
-                  <div class="p-4 text-white text-[13px] mt-4">
-                    <p class="mb-2">
-                      <i class="lni lni-invention"></i> &nbsp; ProTip! The feed
-                      shows you events from people you
-                      <span class="text-blue-500">follow</span> and repositories
-                      you <span class="text-blue-500">watch</span> or
-                      <span class="text-blue-500">star</span>.
-                    </p>
-                    <p>
-                      <i class="lni lni-rss-feed"></i> &nbsp; Subscribe to your
-                      news feed
+
+                  <!-- gigiggi -->
+                  <div
+                    class="p-9 min-h-[130px] mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-white"
+                  >
+                    <p class="font-semibold mb-2">
+                      Discover interesting projects and people to populate your
+                      personal news feed.
                     </p>
                   </div>
+                  <!-- gigiggi -->
+                  <div
+                    class="p-9 min-h-[130px] mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-white"
+                  >
+                    <p class="font-semibold mb-2">
+                      Discover interesting projects and people to populate your
+                      personal news feed.
+                    </p>
+                  </div>
+                  <!-- gigiggi -->
+                  <div
+                    class="p-9 min-h-[130px] mt-1 bg-zinc-800 bg-opacity-50 border border-zinc-700 rounded-md text-white"
+                  >
+                    <p class="font-semibold mb-2">
+                      Discover interesting projects and people to populate your
+                      personal news feed.
+                    </p>
+                  </div>
+                  <!-- gigiggi -->
                 </div>
                 <!-- konten tab 1 end -->
                 <!-- konten tab 2 start -->
